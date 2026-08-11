@@ -137,29 +137,35 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBookingModal }) => {
         {/* Quick Highlights Bar */}
         <motion.div
           variants={itemVariants}
-          className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 pt-6 border-t border-slate-800/80 w-full max-w-3xl text-left"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-6 border-t border-slate-800/80 w-full max-w-3xl text-left"
         >
-          <div className="flex items-center gap-3 bg-slate-900/40 p-3 rounded-xl border border-slate-800/50 backdrop-blur-sm">
-            <Clock className="w-5 h-5 text-emerald-400 shrink-0" />
+          <div className="flex items-center gap-3 bg-slate-900/60 p-3.5 rounded-2xl border border-slate-800/80 backdrop-blur-sm hover:border-emerald-500/30 transition-colors">
+            <div className="p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 shrink-0">
+              <Clock className="w-5 h-5" />
+            </div>
             <div>
-              <p className="text-xs text-slate-400 uppercase font-bold tracking-wider">Timings</p>
-              <p className="text-sm font-extrabold text-slate-200">Open 24 Hours</p>
+              <p className="text-[11px] text-slate-400 uppercase font-extrabold tracking-wider">Timings</p>
+              <p className="text-sm font-extrabold text-slate-100">Open 24 Hours</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-3 bg-slate-900/40 p-3 rounded-xl border border-slate-800/50 backdrop-blur-sm">
-            <MapPin className="w-5 h-5 text-emerald-400 shrink-0" />
+          <div className="flex items-center gap-3 bg-slate-900/60 p-3.5 rounded-2xl border border-slate-800/80 backdrop-blur-sm hover:border-emerald-500/30 transition-colors">
+            <div className="p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 shrink-0">
+              <MapPin className="w-5 h-5" />
+            </div>
             <div>
-              <p className="text-xs text-slate-400 uppercase font-bold tracking-wider">Location</p>
-              <p className="text-sm font-extrabold text-slate-200 truncate">Deep Jyoti Nagar, Latur</p>
+              <p className="text-[11px] text-slate-400 uppercase font-extrabold tracking-wider">Location</p>
+              <p className="text-sm font-extrabold text-slate-100 whitespace-nowrap">Deep Jyoti Nagar, Latur</p>
             </div>
           </div>
 
-          <div className="col-span-2 sm:col-span-1 flex items-center gap-3 bg-slate-900/40 p-3 rounded-xl border border-slate-800/50 backdrop-blur-sm">
-            <ShieldCheck className="w-5 h-5 text-emerald-400 shrink-0" />
+          <div className="flex items-center gap-3 bg-slate-900/60 p-3.5 rounded-2xl border border-slate-800/80 backdrop-blur-sm hover:border-emerald-500/30 transition-colors">
+            <div className="p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 shrink-0">
+              <ShieldCheck className="w-5 h-5" />
+            </div>
             <div>
-              <p className="text-xs text-slate-400 uppercase font-bold tracking-wider">Experience</p>
-              <p className="text-sm font-extrabold text-slate-200">Turf & Pickleball</p>
+              <p className="text-[11px] text-slate-400 uppercase font-extrabold tracking-wider">Facility</p>
+              <p className="text-sm font-extrabold text-slate-100">Turf & Pickleball</p>
             </div>
           </div>
         </motion.div>

@@ -14,6 +14,7 @@ import { FinalCta } from './components/FinalCta';
 import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { BookingModal } from './components/BookingModal';
+import { MobileBottomBar } from './components/MobileBottomBar';
 
 export default function App() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
@@ -49,6 +50,7 @@ export default function App() {
       {/* Footer & Floating Widgets */}
       <Footer />
       <FloatingWhatsApp />
+      <MobileBottomBar onOpenBookingModal={handleOpenBookingModal} />
 
       {/* Global Booking Modal */}
       <BookingModal

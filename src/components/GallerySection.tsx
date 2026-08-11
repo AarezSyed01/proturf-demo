@@ -51,12 +51,12 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ onOpenBookingMod
         </motion.div>
 
         {/* Category Tabs */}
-        <div className="flex items-center justify-center flex-wrap gap-2 sm:gap-3 mb-10">
+        <div className="flex items-center justify-start sm:justify-center overflow-x-auto no-scrollbar py-2 gap-2 sm:gap-3 mb-10 -mx-4 sm:mx-0 px-4 sm:px-0">
           {categories.map((cat) => (
             <button
               key={cat.key}
               onClick={() => setActiveCategory(cat.key)}
-              className={`px-5 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold transition-all duration-300 border ${
+              className={`px-5 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold whitespace-nowrap shrink-0 transition-all duration-300 border ${
                 activeCategory === cat.key
                   ? 'bg-emerald-500 border-emerald-400 text-slate-950 shadow-lg shadow-emerald-500/25 scale-105'
                   : 'bg-slate-900/80 border-slate-800 text-slate-300 hover:text-white hover:border-slate-700'

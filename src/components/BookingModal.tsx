@@ -44,7 +44,7 @@ Please confirm availability!`;
       id="booking-modal-overlay"
     >
       <div
-        className="relative max-w-lg w-full bg-[#0d1117] border border-emerald-500/30 rounded-3xl p-6 sm:p-8 shadow-2xl overflow-hidden"
+        className="relative max-w-lg w-full max-h-[92vh] overflow-y-auto bg-[#0d1117] border border-emerald-500/30 rounded-3xl p-6 sm:p-8 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
         id="booking-modal-content"
       >

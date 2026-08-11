@@ -8,7 +8,7 @@ export const StatsSection: React.FC = () => {
     {
       value: `${BUSINESS_INFO.googleRating}★`,
       label: 'Google Rating',
-      sublabel: 'Top rated in Latur',
+      sublabel: 'Top rated facility in Latur',
       icon: Star,
       iconColor: 'text-amber-400',
     },
@@ -28,8 +28,8 @@ export const StatsSection: React.FC = () => {
     },
     {
       value: 'Latur',
-      label: 'Maharashtra',
-      sublabel: 'Deep Jyoti Nagar',
+      label: 'Prime Location',
+      sublabel: 'Deep Jyoti Nagar, MH',
       icon: MapPin,
       iconColor: 'text-emerald-400',
     },

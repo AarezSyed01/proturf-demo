@@ -38,7 +38,7 @@ export const FloatingWhatsApp: React.FC = () => {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2 group"
+      className="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-50 flex flex-col items-end gap-2 group"
       id="floating-whatsapp-container"
     >
       {/* Tooltip Badge */}

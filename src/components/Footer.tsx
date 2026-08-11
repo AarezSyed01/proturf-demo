@@ -14,8 +14,22 @@ export const Footer: React.FC = () => {
           {/* Brand Col */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-400 to-green-600 flex items-center justify-center text-slate-950 font-black text-xl shadow-lg shadow-emerald-500/20">
-                P
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-900 via-[#0a1813] to-slate-950 p-1 flex items-center justify-center shadow-lg shadow-emerald-500/25 border border-emerald-500/40 shrink-0">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+                  <ellipse cx="20" cy="23" rx="15" ry="8" fill="#059669" fillOpacity="0.45" stroke="#10b981" strokeWidth="1.5" />
+                  <ellipse cx="20" cy="23" rx="9" ry="4.5" fill="none" stroke="#34d399" strokeWidth="1" strokeDasharray="2 1" />
+                  <line x1="20" y1="15" x2="20" y2="31" stroke="#34d399" strokeWidth="1" />
+                  <circle cx="27" cy="11.5" r="3.5" fill="#fbbf24" />
+                  <path d="M25.5 10C26.5 11.5 28 11.5 28.5 13" stroke="#d97706" strokeWidth="0.8" />
+                  <path d="M6 18C11 9 26 8 33 15" stroke="url(#footerLogoGrad)" strokeWidth="2.2" strokeLinecap="round" />
+                  <defs>
+                    <linearGradient id="footerLogoGrad" x1="6" y1="12" x2="33" y2="15" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#34d399" />
+                      <stop offset="0.6" stopColor="#10b981" />
+                      <stop offset="1" stopColor="#fbbf24" />
+                    </linearGradient>
+                  </defs>
+                </svg>
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold text-xl tracking-tight text-white font-display">
