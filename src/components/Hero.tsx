@@ -36,19 +36,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBookingModal }) => {
       {/* Background Image with Dark Gradient Overlays */}
       <div className="absolute inset-0 z-0">
         <motion.img
-          initial={{ scale: 1.12, opacity: 0 }}
-          animate={{ scale: 1.02, opacity: 1 }}
+          initial={{ scale: 1.15, opacity: 0 }}
+          animate={{ scale: 1.05, opacity: 1 }}
           transition={{ duration: 1.2, ease: 'easeOut' }}
-          src="/background_img.png"
-          alt="Pro Turf Sports Arena"
-          className="w-full h-full object-cover object-center filter brightness-90 contrast-110"
+          src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=1920&auto=format&fit=crop"
+          alt="Pro Turf & Pickleball Sports Facility at Night"
+          className="w-full h-full object-cover object-center filter brightness-75 contrast-110"
+          referrerPolicy="no-referrer"
         />
-        {/* Layered Gradient Overlays for High Legibility & Atmosphere */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#080a0c] via-[#080a0c]/60 to-black/40"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#080a0c]/80 via-transparent to-[#080a0c]/80"></div>
-        {/* Ambient Red & Green Glows */}
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-red-600/20 blur-[150px] pointer-events-none rounded-full"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-[500px] h-[250px] bg-emerald-500/15 blur-[130px] pointer-events-none rounded-full"></div>
+        {/* Layered Gradient Overlays for High Legibility */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#080a0c] via-[#080a0c]/80 to-black/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#080a0c] via-transparent to-[#080a0c]/80"></div>
+        {/* Subtle Green Ambient Glow */}
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-emerald-500/15 blur-[140px] pointer-events-none rounded-full"></div>
       </div>
 
       <motion.div
